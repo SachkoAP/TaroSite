@@ -1,0 +1,74 @@
+@import "./../../styles/mixins.scss";
+.CoursHeader {
+  header {
+    background: linear-gradient(to right, #1b1b1b, #240d35, #2c004f);
+    margin: 0;
+    width: 100%;
+    padding: 54px 55px 29px 55px;
+    box-sizing: border-box;
+    margin-bottom: -1px
+  }
+  .arrowBack {
+    align-items: start;
+    img {
+      transition: 0.1s linear all;
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+  .headerLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  .line {
+    content: "";
+    position: relative;
+    background-color: #fff;
+    height: 2px;
+    box-sizing: border-box;
+  }
+}
+
+.headerLogoInner{
+  display: flex;
+}
+@media (max-width: $w5) {
+  .headerLogoImg {
+   width: 800px!important;
+  }
+}
+
+@media (max-width: $w6) {
+  .headerLogoImg {
+   width: 600px!important;
+  }
+}
+@media (max-width: 700px) {
+  header{
+    padding: 37px 25px 29px 25px!important;
+  }
+  .headerLogoImg {
+   width: 400px!important;
+  }
+ 
+  .headerLogoInner{
+    display: block;
+  }
+  .arrowBack img{
+    width: 34px;
+    height: 34px;
+  }
+  .line {
+    background-color: #737373!important;
+    height: 1px!important;
+  }
+}
+@media (max-width: 500px) {
+  .headerLogoImg {
+   width: 351px!important;
+  }
+}

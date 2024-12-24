@@ -1,0 +1,29 @@
+.awesomeSlider {
+  display: flex !important;
+  justify-content: center !important;
+  background-color: inherit !important;
+}
+
+.awsSlide {
+  background: none;
+  background-color: transparent;
+}
+
+.awssld {
+  background: none;
+  background-color: transparent;
+}
+
+.awssld__content {
+  background: none;
+  background-color: transparent;
+}
+
+.awssld__bullets {
+  bottom: 0;
+}
+
+.awssld__bullets .awssld__bullets--active {
+  background: #fff;
+  background-color: #fff;
+}

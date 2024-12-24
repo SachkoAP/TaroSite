@@ -1,0 +1,141 @@
+@import "./colors.scss";
+
+$w1: 1600px;
+$w2: 1430px;
+$w3: 1370px;
+$w4: 1260px;
+$w5: 1150px;
+$w6: 940px;
+$w7: 790px;
+//! мобилка
+$w8: 120px;
+
+@mixin Button1(
+  $width: 100%,
+  $paddingTB: 24px,
+  $paddingLR: 50px,
+  $bgColor: #fff,
+  $textColor: #000,
+  $borderradius: 200px,
+  $fs: 20px,
+  $fw: 600
+) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bgColor;
+  padding: $paddingTB $paddingLR;
+  outline: none;
+  color: $textColor;
+  border-radius: $borderradius;
+  border: none;
+  width: $width;
+  font-size: $fs;
+  font-weight: $fw;
+  font-family: "Montserrat";
+  line-height: 24px;
+
+  &:hover {
+    // background-color: var(--blue2);
+    opacity: 70%;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  &:active {
+    // background-color: var(--blue3);
+    opacity: 70%;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+}
+
+@mixin Button2(
+  $width: 100%,
+  $paddingTB: 24px,
+  $paddingLR: 50px,
+  // $bgColor: #fff,
+  $textColor: #fff,
+  $borderradius: 200px,
+  $fs: 20px,
+  $fw: 500
+) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: $paddingTB $paddingLR;
+  outline: none;
+  color: $textColor;
+  border-radius: $borderradius;
+  border: 2px solid #fff;
+  width: $width;
+  font-size: $fs;
+  font-weight: $fw;
+
+  &:hover {
+    // background-color: var(--blue2);
+    opacity: 70%;
+
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  &:active {
+    // background-color: var(--blue3);
+    opacity: 70%;
+
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+}
+
+@mixin Input(
+  $width: 100%,
+  $paddingTB: 24px,
+  $paddingLR: 50px,
+  // $bgColor: #fff,
+  $textColor: #fff,
+  $borderradius: 200px,
+  $fs: 20px,
+  $fw: 500
+) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  padding: $paddingTB $paddingLR;
+  outline: none;
+  color: $textColor;
+  border-radius: $borderradius;
+  border: 2px solid #fff;
+  width: $width;
+  font-size: $fs;
+  font-weight: $fw;
+  cursor: pointer;
+}
+
+@mixin Ul() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: flex;
+  }
+}
+
+@mixin scrollStyle($width: 8px, $height: 16px) {
+  &::-webkit-scrollbar {
+    width: $width; /* ширина scrollbar */
+    height: $height;
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff; /* цвет дорожки */
+  }
+  &::-webkit-scrollbar-thumb,
+  &::-webkit-scrollbar-thumb {
+    background-color: #a6a6a6;
+    border-radius: 5px;
+    border: 3px solid #a6a6a6;
+  }
+}

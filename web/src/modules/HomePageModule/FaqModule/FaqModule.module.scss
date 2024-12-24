@@ -1,0 +1,47 @@
+@import "./../../../styles/mixins.scss";
+
+.FaqModule {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  justify-content: center;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 10vw;
+  }
+  .left {
+    width: 25vw;
+    position: relative;
+    margin-right: 4vw;
+
+    .like1 {
+      width: 1.8vw;
+      height: 1.8vw;
+      position: absolute;
+      left: 13vw;
+      top: -0.6vw;
+      transform: rotate(20deg);
+      @media (max-width: 800px) {
+        width: 6.8vw;
+        height: 6.8vw;
+        left: 45vw;
+        top: -6.6vw;
+      }
+    }
+    h2 {
+      font-family: "Novelist";
+      font-size: 4.2vw;
+      font-weight: 400;
+      line-height: 5vw;
+      margin-top: 0;
+      @media (max-width: 800px) {
+        font-size: 14vw;
+        line-height: 16vw;
+      }
+    }
+    img {
+      width: 20vw;
+      pointer-events: none;
+    }
+  }
+}

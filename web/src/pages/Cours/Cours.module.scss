@@ -1,0 +1,34 @@
+.Cours{
+    .CoursBlockCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width:1289px ;
+        a{
+            text-decoration: none;
+        }
+    }
+    .CoursBlockCardNotLenghts{
+        max-width:1289px;
+        height: 215px;
+        border: 2px solid #ffffff;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26.4px;
+        color: #fff;
+        font-family: "Montserrat";
+        margin: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        text-align: center;
+        @media (max-width: 600px) {
+            width: 312px;
+            height: 152px;
+            font-size: 18px;
+        }
+    }
+}

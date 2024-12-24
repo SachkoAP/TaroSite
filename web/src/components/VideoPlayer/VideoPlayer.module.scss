@@ -1,0 +1,63 @@
+.VideoPlayer {
+  .videoBlock {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    height: auto;
+    // padding: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    @media (max-width: 400px) {
+      width: 90vw;
+
+      height: auto;
+      // padding: 50px;
+    }
+
+    .permission {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+      position: absolute;
+      top: 50px;
+      left: -20%;
+      cursor: pointer;
+      p {
+        @media (max-width: 400px) {
+          font-size: 16px;
+        }
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        outline: none;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 10px;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: "Montserrat";
+          @media (max-width: 400px) {
+            font-size: 12px;
+          }
+
+          &:hover {
+            background-color: #e3e3e3;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .permissionShow {
+      opacity: 1;
+      pointer-events: visible;
+      transition: opacity 0.5s ease;
+    }
+  }
+}

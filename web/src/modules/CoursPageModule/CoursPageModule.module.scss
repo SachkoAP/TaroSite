@@ -1,0 +1,18 @@
+.CoursPageModule{
+    // display: flex;
+    // justify-content: center;
+    // width: 100%;
+    main{
+        background: linear-gradient(to right, #1b1b1b, #240d35, #2c004f);
+        margin: 0;
+        padding: 50px 115px;
+        h1,h2,h3,h4,h5,h6,p{
+            margin: 0;
+        }   
+        display: flex;
+        justify-content: center;
+    }
+    @media (max-width: 500px) {
+        padding: 0px!important;
+    } 
+}

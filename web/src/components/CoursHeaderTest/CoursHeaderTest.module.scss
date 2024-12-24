@@ -1,0 +1,80 @@
+.CoursHeader {
+  header {
+    margin: 0;
+    width: 100%;
+    padding: 54px 55px 29px 55px;
+    box-sizing: border-box;
+    margin-bottom: -1px
+  }
+  .arrowBack {
+    align-items: start;
+    padding-top: 30px;
+    position: absolute;
+    left: 115px;
+    @media (max-width: 900px) {
+      position: relative;
+      left: 0;
+    }
+    @media (max-width: 500px) {
+      padding-top: 0px;
+    }
+    img {
+      transition: 0.1s linear all;
+      @media (max-width: 500px) {
+        width: 30px;
+        height: 30px;
+      }
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+  .blockTestNumber {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    @media (max-width: 600px) {
+      font-size: 18px;
+      margin: 0;
+      }
+      p{
+        margin: 0;
+      }
+  }
+  .headerLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 25px;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+  .headerLogoBlock{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img{
+      @media (max-width: 600px) {
+        width: 400px;
+      }
+      @media (max-width: 500px) {
+        width: 334px;
+      }
+    }
+   
+  }
+  .line {
+    content: "";
+    position: relative;
+    background-color: #fff;
+    height: 2px;
+    box-sizing: border-box;
+  }
+}

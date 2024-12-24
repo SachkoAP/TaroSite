@@ -1,0 +1,180 @@
+@import "./../../../styles/mixins.scss";
+@import "./../../../styles/colors.scss";
+
+.HeadModule {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 22px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+  .containerTitle {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    position: relative;
+    font-family: "Novelist", sans-serif;
+    .like1 {
+      position: absolute;
+      left: -2vw;
+      top: -2vw;
+      width: 1.8vw;
+      height: 1.8vw;
+      transform: rotate(-24deg);
+      @media (max-width: 800px) {
+        left: -1vw;
+        top: -5vw;
+        width: 3.5vw;
+        height: 3.5vw;
+      }
+    }
+    p {
+      font-size: 8vw;
+      line-height: 8vw;
+      text-align: end;
+      color: #fff;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+      @media (max-width: 800px) {
+        font-size: 17.3vw;
+        line-height: 17.3vw;
+        padding-right: 3vw;
+      }
+    }
+    p:nth-child(2) {
+      position: relative;
+      // padding-left: 180px;
+      .like2 {
+        position: absolute;
+        right: 2vw;
+        top: 2.5vw;
+        width: 1.8vw;
+        height: 1.8vw;
+
+        @media (max-width: 800px) {
+          right: 8vw;
+          top: 5vw;
+          width: 3.5vw;
+          height: 3.5vw;
+        }
+      }
+    }
+  }
+  .titleInfo {
+    width: auto;
+    margin-top: 3vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 2vw;
+    font-size: 1.5vw;
+
+    @media (max-width: 800px) {
+      br {
+        display: none;
+      }
+      font-size: 4.2vw;
+      line-height: 5.5vw;
+      margin-top: 10vw;
+    }
+  }
+  .but {
+    // width: 620px;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+    .like3 {
+      position: absolute;
+      right: -4vw;
+      top: -2vw;
+      width: 1.8vw;
+      height: 1.8vw;
+      transform: rotate(16deg);
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+    button:nth-child(1) {
+      @include Button1();
+      width: auto;
+      margin-right: 2vw;
+      padding: 1.5vw 3vw;
+      font-size: 1vw;
+      line-height: normal;
+      @media (max-width: 800px) {
+        width: 100%;
+        font-size: 4vw;
+        padding: 3vw 6vw;
+      }
+    }
+    a {
+      text-decoration: none;
+      button:nth-child(1) {
+        @include Button2();
+        position: relative;
+        text-decoration: none;
+        width: auto;
+        padding: 1.5vw 3vw;
+        font-size: 1vw;
+        line-height: normal;
+        @media (max-width: 800px) {
+          width: 100%;
+          font-size: 4vw;
+          padding: 3vw 6vw;
+          margin-top: 3vw;
+        }
+      }
+    }
+  }
+  .imgContainer {
+    position: relative;
+    .like4 {
+      position: absolute;
+      right: 10vw;
+      top: 1vw;
+      transform: rotate(15deg);
+      width: 2.4vw;
+      height: 2.4vw;
+      @media (max-width: 800px) {
+        top: 14vw;
+        right: 20vw;
+
+        width: 6vw;
+        height: 6vw;
+      }
+    }
+
+    .girlFoto {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      width: 40vw;
+      height: 50vw;
+      @media (max-width: 800px) {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10vw;
+
+        // height: 50vw;
+      }
+      img {
+        // left: -100px;
+        // position: absolute;
+        pointer-events: none;
+        @media (max-width: 800px) {
+          width: 100%;
+          height: auto;
+          // height: 50vw;
+        }
+      }
+    }
+  }
+}

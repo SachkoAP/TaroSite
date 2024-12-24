@@ -1,0 +1,171 @@
+@import "./../../../styles/mixins.scss";
+
+.FaqQuestionsModule {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 7vw 8vw;
+  flex-direction: column;
+  .textSvaz {
+    display: none;
+    @media (max-width: 800px) {
+      display: flex;
+      margin: 20px 0px;
+      justify-content: center;
+      text-align: center;
+      font-size: 3vw;
+      font-family: "Montserrat";
+    }
+  }
+  .title {
+    width: 100%;
+    display: flex;
+    position: relative;
+    h2 {
+      font-family: "Novelist";
+      font-size: 4.2vw;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      @media (max-width: 800px) {
+        font-size: 12vw;
+        margin-top: 8vw;
+      }
+    }
+    img {
+      width: 1.8vw;
+      position: absolute;
+      left: 36.5vw;
+      top: -1vw;
+      transform: rotate(18deg);
+      @media (max-width: 800px) {
+        width: 6vw;
+        left: 52vw;
+        top: 2vw;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3vw;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .left {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-right: 8vw;
+
+      @media (max-width: 800px) {
+        margin-right: 0;
+      }
+      p {
+        font-family: "Montserrat";
+        font-size: 1.2vw;
+        font-weight: 400;
+        line-height: 1.5vw;
+        width: 24vw;
+
+        @media (max-width: 800px) {
+          font-size: 3.5vw;
+          line-height: 5vw;
+          text-align: center;
+          width: 100%;
+          span {
+            display: none;
+          }
+        }
+      }
+
+      button {
+        @include Button1();
+        width: 18vw;
+        font-weight: 500 !important;
+        margin-top: 1vw;
+        padding: 1vw 2vw;
+        font-size: 1vw;
+        text-transform: uppercase;
+
+        @media (max-width: 800px) {
+          width: 100%;
+          font-size: 4vw;
+          padding: 4vw 2vw;
+        }
+      }
+    }
+
+    .rigth {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      button {
+        @include Button1();
+        width: 12vw;
+        font-weight: 500 !important;
+        margin: 0 auto;
+        margin-top: 2vw;
+        padding: 1vw 2vw;
+        font-size: 1vw;
+        text-transform: uppercase;
+
+        @media (max-width: 800px) {
+          width: 100%;
+          font-size: 4vw;
+          padding: 4vw 2vw;
+        }
+      }
+    }
+
+    .tel {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 12vw;
+      border: 0.05vw solid #fff;
+      width: 17vw;
+      margin: 0 auto;
+      margin-top: 2.1vw;
+      padding: 0.6vw;
+      @media (max-width: 800px) {
+        padding: 2vw;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      img {
+        margin-right: 1.5vw;
+        @media (max-width: 800px) {
+          margin-right: 3vw;
+        }
+      }
+      p {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat";
+        font-size: 1.2vw;
+        font-weight: 400;
+        @media (max-width: 800px) {
+          font-size: 5vw;
+        }
+      }
+      input {
+        width: 260px;
+        background-color: inherit;
+        border: none;
+        font-family: "Montserrat";
+        font-size: 1.2vw;
+        font-weight: 400;
+        color: #fff;
+        outline: none;
+        @media (max-width: 800px) {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+}

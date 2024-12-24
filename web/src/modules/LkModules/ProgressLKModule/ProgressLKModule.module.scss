@@ -1,0 +1,30 @@
+.ProgressLKModule {
+  margin: 0;
+  padding: 0 5%;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media (max-width: 700px) {
+    margin-top: 0px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    margin-bottom: 67px;
+    @media (max-width: 700px) {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .items {
+    margin-bottom: 20px;
+  }
+}

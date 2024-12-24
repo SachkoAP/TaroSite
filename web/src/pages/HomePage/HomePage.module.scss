@@ -1,0 +1,46 @@
+@import "./../../styles/mixins.scss";
+@import "./../../styles/colors.scss";
+
+.HomePage {
+  background: linear-gradient(to right, #1b1b1b, #240d35, #2c004f);
+  padding: 69px 72px;
+  padding-bottom: 0;
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    img {
+      width: 2vw;
+      height: 2vw;
+      cursor: pointer;
+      margin-right: 2vw;
+    }
+    button {
+      margin-right: 80px;
+      @include Button2;
+      width: 181px;
+      padding: 12px 16px;
+    }
+    a {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+$w7: 790px;
+//! мобилка
+$w8: 120px;
+.HomePage {
+  @media (min-width: $w8) and (max-width: $w7) {
+    padding: 28px 24px;
+    .menu {
+      img {
+        margin-right: 10px;
+        width: 5vw;
+        height: 5vw;
+      }
+    }
+  }
+}

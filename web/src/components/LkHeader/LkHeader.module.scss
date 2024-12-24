@@ -1,0 +1,133 @@
+.CoursHeader {
+  header {
+    background: linear-gradient(to right, #1b1b1b, #240d35, #2c004f);
+    margin: 0;
+    width: 100%;
+    padding: 54px 55px 29px 55px;
+    box-sizing: border-box;
+  }
+  .arrowBack {
+    align-items: start;
+    // padding-top: 30px;
+    width: 50px;
+    margin-left: 50px;
+
+    @media (max-width: 900px) {
+      position: absolute;
+      left: 5%;
+      width: 8vw;
+      margin-left: 10%;
+    }
+    img {
+      @media (max-width: 900px) {
+        width: 6vw;
+      }
+      @media (max-width: 400px) {
+        width: 8vw;
+      }
+      transition: 0.1s linear all;
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+  .headerLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  .headerLogoImgBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .humanAva {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 42px;
+      color: #fff;
+      font-family: "Montserrat";
+      font-weight: 400;
+      width: 100px;
+      height: 100px;
+      background-color: #737373;
+      border-radius: 50%;
+      margin-right: 20px;
+      @media (max-width: 900px) {
+        font-size: 32px;
+
+        width: 70px;
+        height: 70px;
+        margin-right: 0;
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: 900px) {
+      width: auto;
+      flex-direction: column;
+    }
+    img {
+      @media (max-width: 900px) {
+        width: 66px;
+        margin: 0 auto;
+      }
+      @media (max-width: 400px) {
+        width: 66px;
+        margin: 0 auto;
+      }
+      margin-right: 10px;
+    }
+    .headerLogoTextBlock {
+      display: block;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        color: #fff;
+        font-family: "Montserrat";
+        margin: 0;
+        &:nth-child(1) {
+          font-size: 32px;
+          font-weight: 600;
+          margin: 15px 0px;
+          @media (max-width: 900px) {
+            font-size: 24px;
+            margin: 7px 0px;
+            text-align: center;
+          }
+          @media (max-width: 400px) {
+            font-size: 24px;
+            margin: 7px 0px;
+            text-align: center;
+          }
+        }
+        &:nth-child(2) {
+          font-size: 16px;
+          font-weight: 500;
+          @media (max-width: 900px) {
+            font-size: 14px;
+            text-align: center;
+          }
+          @media (max-width: 400px) {
+            font-size: 14px;
+            margin: 7px 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .line {
+    content: "";
+    position: relative;
+    background-color: #737373;
+    height: 1px;
+    box-sizing: border-box;
+    margin-top: 90px;
+    @media (max-width: 900px) {
+      margin-top: 30px;
+    }
+  }
+}

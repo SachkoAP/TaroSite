@@ -1,0 +1,74 @@
+.CardCursBlock{
+    margin: 15px;
+    .CardCursBlockInner{
+        display: flex;
+        display: flex;
+        align-items: center;
+        width: 570px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        height: 214px;
+        .CardCursBlockInfo{
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            p{
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 29.26px;
+                color: #fff;
+                margin: 0;
+                font-family: "Montserrat";
+            }
+            p:nth-child(2){
+               
+                    margin: 20px 0px;
+                
+            }
+            img{
+                transform: rotate(180deg);
+                transition: 0.1s linear all;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .CardCursBlockInner{
+        width: 410px!important;
+        border: 1px solid #fff!important;
+    }
+    
+}
+@media (max-width: 500px) {
+    .CardCursBlock{
+        margin: 5px!important;
+        .CardCursBlockInner{
+            width: 310px!important;
+            border: 1px solid #fff!important;
+            height: 150px!important;
+        }
+        .CardCursBlockInfo{
+            p{
+                font-size: 16px!important;
+            }
+            p:nth-child(2){
+                font-size: 18px!important;
+                margin: 12px 0px!important;
+            }
+            img{
+                width: 30px!important;
+                height: 30px!important;
+            }
+        }
+    }
+    
+    
+}

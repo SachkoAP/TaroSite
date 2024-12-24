@@ -1,0 +1,101 @@
+@import "./../../styles/mixins.scss";
+
+.AuthorizationPage {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #1b1b1b, #240d35, #2c004f);
+  padding: 69px 72px;
+  padding-bottom: 0;
+  color: #fff;
+  height: 100vh;
+  box-sizing: border-box;
+  .container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 40px;
+    h1 {
+      font-family: "Montserrat";
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 58.51px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+      // width: 400px;
+      span:nth-child(1) {
+        color: #6e6e6e;
+        cursor: pointer;
+      }
+    }
+    .reg {
+      font-family: "Montserrat";
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 58.51px;
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+      width: 400px;
+      span {
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          transition: all 0.15s ease;
+        }
+      }
+      a {
+        color: #9b9b9b;
+        outline: none;
+        text-decoration: none;
+      }
+    }
+    .like1 {
+      position: absolute;
+      left: -50px;
+      top: 70px;
+      width: 34.1px;
+      height: 31.95px;
+      transform: rotate(-12deg);
+    }
+    .like2 {
+      position: absolute;
+      right: -50px;
+      top: -30px;
+      width: 34.1px;
+      height: 31.95px;
+      transform: rotate(+12deg);
+    }
+  }
+}
+
+@media (min-width: $w8) and (max-width: $w7) {
+  .AuthorizationPage {
+    height: 100vh !important;
+    padding: 0 !important;
+    .spanslash {
+      display: none;
+    }
+    .container {
+      .like1 {
+        left: 24px !important;
+        width: 25px !important;
+      }
+      .like2 {
+        right: 12px !important;
+        width: 25px !important;
+      }
+    }
+    .reg {
+      width: 100vw !important;
+    }
+    .container {
+      h1 {
+        margin-top: 10px !important;
+        width: 200px !important;
+        font-size: 28px !important;
+        line-height: 40.51px !important;
+      }
+    }
+  }
+}
